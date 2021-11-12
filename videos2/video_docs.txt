@@ -1,0 +1,47 @@
+﻿1 = từ vựng
+2 = câu đơn
+3 = câu phức
+4 = hội thoại
+
+phan1 
+1.1.mp4 = Phần 1_Buồn.mp4
+1.2.mp4 = Phần 1_Lo lắng.mp4
+1.3.mp4 = Phần 1_Sợ.mp4
+1.4.mp4 = Phần 1_Tức giận.mp4
+1.5.mp4 = Phần 1_Vui.mp4
+1.6.mp4 = Phần 1_Xấu hổ.mp4
+1.7.mp4 = Phần 2_Ấn tượng.mp4
+1.8.mp4 = Phần 2_Ghen tị.mp4
+1.9.mp4 = Phần 2_Ghét.mp4
+1.10.mp4 = Phần 2_Thất vọng.mp4
+1.11.mp4 = Phần 2_Ngạc nhiên hoặc bất ngờ.mp4
+
+phan 2
+2.1.mp4 = Phần 1_Câu đơn (Tôi vui).mp4
+2.2.mp4 = Phần 2_Câu đơn_Tôi vô cùng ấn tượng với cô ây.mp4
+
+Phan 3
+3.1.mp4 = Phần 1_Câu phức (Tôi lo lắng vì chưa học thuộc bài cũ).mp4
+3.2.mp4 = Phần 2_Câu phức_Tôi vô cùng ấn tượng với cô ấy vì cô ấy có giọng hát hay..mp4
+
+
+phan 4 
+4.1.mp4 = Phần 3_Bạn buồn à.mp4
+4.2.mp4 = Phần 3_Không tôi hơi mệt thôi.mp4
+4.3.mp4 = Phần 3_Không tôi vui mà.mp4
+4.4.mp4 = Phần 3_Phải tôi buồn lắm.mp4
+4.5.mp4 = Phần 3_Tôi có chuyện bất ngờ.mp4
+
+
+4.6.mp4 = Phần 3_Bạn thuộc bài chưa.mp4
+4.7.mp4 = Phần 3_Tôi chưa học bài vì tôi bị mệt.mp4
+4.8.mp4 = Phần 3_Tôi chưa thuộc hết. Tôi mệt vì bài học nhiều quá..mp4
+4.9.mp4 = Phần 3_Tôi không hiểu bài nên học hoài chưa thuộc.mp4
+4.10.mp4 = Phần 3_Tôi lo vì chưa thuộc bài.mp4
+
+
+4.11.mp4 = Phần 3_Chào_bạn, hôm nay bạn cảm thấy như thế nào..mp4
+4.12.mp4 = Phần 3_Tôi khỏe.mp4
+4.13.mp4 = Phần 3_Tôi mệt.mp4
+4.14.mp4 = Phần 3_Tôi buồn.mp4
+4.15.mp4 = Phần 3_Tôi bình thường.mp4

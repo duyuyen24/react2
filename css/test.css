@@ -1,0 +1,414 @@
+
+.main_test {
+    position: relative;
+    top: 10px;
+    padding-bottom: 200px !important;
+    margin-bottom: 200px !important;
+    height: 100%;
+}
+
+.start_btn,
+.info_box,
+.result_box{
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.start_btn {
+    width: 400px;
+}
+
+.info_list {
+    min-height: 400px;
+}
+
+.test_footer {
+    padding-bottom: 60px !important;
+    border-top: 0px;
+    border-bottom: 0px !important;
+    padding-bottom: 20px;
+
+}
+
+.quiz_box {
+    margin-top: 160px !important;
+    position: absolute;
+    width: 900px !important;
+    top: 200px;
+    left: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(107, 147, 187);
+    padding: 85px 90px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+.info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.info_box .info-list{
+    padding: 14px 30px;
+    min-height: 200px
+}
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.info_box .info-list .info span{
+    font-weight: 600;
+    color: rgb(107, 147, 187);
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 98px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.quiz_box{
+    width: 700px;
+    height: 560px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    margin-top: 130px; 
+    padding-bottom: 70px;
+}
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+video {
+    height: 242px;
+    margin: 0px
+}
+
+.option_list .option_video span video {
+    height: 170px;
+}
+
+.option_list span video {
+    height: 170px;
+}
+
+section{
+    padding: 25px 30px 50px 30px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+section .option_list{
+    padding: 20px 0px;
+    display: flex; 
+    column-gap: 10px;  
+}
+section .option_list .option{
+    border: 1px solid rgb(107, 147, 187);
+    background: rgb(180, 201, 219);
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: rgb(107, 147, 187);
+}
+section .option_list .option.correct{
+    color: #155724;
+    background: #d4edda;
+}
+section .option_list .option.incorrect{
+    color: #721c24;
+    background: #f8d7da;
+}
+section .option_list .option.disabled{
+    pointer-events: none;
+}
+section .option_list .option .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+.option_list .option .icon.tick{
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+.option_list .option .icon.cross{
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+.test_footer{
+    height: 60px;
+    padding: 20 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgb(160, 159, 159);
+}
+.test_footer .total_que span{
+    display: flex;
+    user-select: none;
+    padding: 0px 0px 50px 30px;
+}
+.test_footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+.test_footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+.button button {
+    position:absolute;
+    right: 30px;
+    bottom: -10px;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background: rgb(82, 89, 95);
+    border: 1px solid rgb(107, 147, 187);
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+.button button:hover{
+    background: rgb(107, 147, 187);
+}
+.button button.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.result_box{
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.result_box .icon{
+    font-size: 100px;
+    color: rgb(107, 147, 187);
+    margin-bottom: 12px;
+}
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.result_box .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+.result_box .score_text span p{
+    padding: 0 4px;
+    font-weight: 600;
+}
+.result_box .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(107, 147, 187);
+    transition: all 0.3s ease;
+}
+.buttons button.restart{
+    color: #fff;
+    background: rgb(107, 147, 187);
+}
+.buttons button.restart:hover{
+    background: rgb(46, 73, 100);
+}
+.buttons button.quit{
+    color: rgb(107, 147, 187);
+    background: #fff;
+}
+.buttons button.quit:hover{
+    color: #fff;
+    background: rgb(107, 147, 187);
+}
+
+.que_picture {
+    text-align: center;
+}
+
+@media (max-width: 768px) { 
+    .info_box,
+    .result_box,
+    .start_btn {
+        margin-top: 60px;
+        width: 300px !important;
+    }
+    .quiz_box {
+        margin-top: 60px;
+        max-width: 310px !important;
+    }
+
+    .test_footer {
+        height: 80px;
+        padding: 20 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid rgb(160, 159, 159);  
+    }
+
+    section {
+        height: 580px;
+    }
+
+    section  .que_text,
+    p,
+    .total_que span {
+        font-size: 18px;
+    }
+
+    video {
+        width:auto;
+        height: 145px;
+        margin: 5px
+    }
+
+    .option_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .option_video {
+        height: 146px;
+    } */
+
+    .button button { 
+        bottom: -10px;
+    }
+
+    .option_list .option_video span video {
+        height: 95px;
+    }
+    
+    .option_list span video {
+        height: 95px;
+    }
+
+
+}

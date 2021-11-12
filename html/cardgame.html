@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="../css/cardgame.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/learn.css"> -->
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" id="my-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" id="my-title" href="../html/learn.html">Quay lại trang chủ Bài học</a>
+            <!-- <button class="navbar-toggler freelancer__navbar__button cl-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                MENU
+                <i class="fas fa-bars"></i>
+            </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li id="a" class="nav-item">
+                        <a class="menu__a nav-link mr-20 cl-darkblue" aria-current="page" href="../html/about.html"
+                            class="about_us">About us</a>
+                    </li>
+                    <li id="b" class="nav-item">
+                        <a class=" menu__a nav-link mr-20 cl-darkblue active" href="../html/learn.html"
+                            class="Learn">Learn</a>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+    </nav>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="lolắng">
+            <video class="front-face" width="320" height="240" muted autoplay loop disablepictureinpicture playsinline>
+                <source src="../videos/phan1/Phần_1_Lo_lắng.mp4" type="video/mp4">
+                <source src="../videos/phan1/Phần_1_Lo_lắng.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+
+        <div class="memory-card" data-framework="lolắng">
+            <h1 class="front-face">Lo lắng</h1>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+
+        <div class="memory-card" data-framework="buồn">
+            <video class="front-face" width="320" height="240" muted autoplay loop disablepictureinpicture playsinline>
+                <source src="../videos/phan1/Phần_1_Buồn.mp4" type="video/mp4">
+                <source src="../videos/phan1/Phần_1_Buồn.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="buồn">
+            <h1 class="front-face">Buồn</h1>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+
+        <div class="memory-card" data-framework="vui">
+            <video class="front-face" width="320" height="240" muted autoplay loop disablepictureinpicture playsinline>
+                <source src="../videos/phan1/Phần_1_Vui.mp4" type="video/mp4">
+                <source src="../videos/phan1/Phần_1_Vui.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="vui">
+            <h1 class="front-face">Vui</h1>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+
+        <div class="memory-card" data-framework="sợ">
+            <video class="front-face" width="320" height="240" muted autoplay loop disablepictureinpicture playsinline>
+                <source src="../videos/phan1/Phần_1_Sợ.mp4" type="video/mp4">
+                <source src="../videos/phan1/Phần_1_Sợ.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+        <div class="memory-card" data-framework="sợ">
+            <h1 class="front-face">Sợ</h1>
+            <img class="back-face" src="../images/logo.png" alt="JS Badge" />
+        </div>
+
+        <script src="../js/cardgame.js"></script>
+        <script src="../vendor/bootstrap5min.js"></script>
+
+</body>
